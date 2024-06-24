@@ -47,20 +47,20 @@ body {
 }
 
 .hide {
-    display: none;
+    visibility: hidden ;
 }
 
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
     .container {
-        height: 80vh;
+        height: 70vh;
         padding: 1rem;
     }
 
     .game {
-        height: 80vmin;
-        width: 80vmin;
-        gap: 2vmin;
+        height: 70vmin;
+        width: 70vmin;
+        gap: 1.5vmin;
     }
 
     .box {
@@ -78,7 +78,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        height: 90vh;
+        height: 70vh;
         padding: 1rem;
     }
 
