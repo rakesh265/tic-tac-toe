@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +53,9 @@ body {
 
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
+    main{
+        height: 100vh;
+    }
     .container {
         height: 70vh;
         padding: 1rem;
@@ -77,6 +81,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    main{
+        height: 100vh;
+    }
     .container {
         height: 70vh;
         padding: 1rem;
