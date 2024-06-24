@@ -1,19 +1,22 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     text-align: center;
     background-color: #2b2d42;
     color: #edf2f4;
 }
-.container{
+
+.container {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.game{
+
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -22,7 +25,8 @@ body{
     align-items: center;
     gap: 1.5vmin;
 }
-.box{
+
+.box {
     height: 18vmin;
     width: 18vmin;
     border: none;
@@ -31,7 +35,8 @@ body{
     background-color: #8d99ae;
     color: #fdf0d5;
 }
-#reset , #new-btn{
+
+#reset, #new-btn {
     height: 5vmin;
     width: 18vmin;
     background-color: black;
@@ -40,6 +45,58 @@ body{
     border: none;
     border-radius: 0.5rem;
 }
-.hide{
+
+.hide {
     display: none;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .container {
+        height: 80vh;
+        padding: 1rem;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 11vmin;
+    }
+
+    #reset, #new-btn {
+        height: 6vmin;
+        width: 20vmin;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 90vh;
+        padding: 1rem;
+    }
+
+    .game {
+        height: 90vmin;
+        width: 90vmin;
+        gap: 2.5vmin;
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 13vmin;
+    }
+
+    #reset, #new-btn {
+        height: 7vmin;
+        width: 22vmin;
+        font-size: 0.8rem;
+    }
 }
